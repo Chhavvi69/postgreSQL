@@ -1,0 +1,25 @@
+Task 1: Installation and Basic Setup of PostgreSQL on Ubuntu
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
+
+Step 1 Update System Packages
+sudo apt update
+sudo apt install postgresql postgresql-contrib -y
+
+Stwp 2Verify PostgreSQL Service Status
+sudo systemctl status postgresql
+sudo systemctl start postgresql
+
+Step 3Switch to PostgreSQL User
+sudo -i -u postgres
+psql
+
+Step 4: Verify PostgreSQL Installation
+SELECT version();
+
+Step 5: Exit PostgreSQL Shell
+\q
+exit
+Result
+
+PostgreSQL was successfully installed on Ubuntu. The service was verified using systemctl, and the database was accessed through the psql command-line interface.
